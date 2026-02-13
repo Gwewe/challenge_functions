@@ -1,5 +1,7 @@
 def say_hello(name):
+    """Function printing hello with the name"""
     return f"hello {name}"
+
 
 greet = say_hello("Wewe")
 print(greet)
@@ -42,12 +44,13 @@ def make_cipher(key):
 
     return cipher
 
+
 print("==========================ENCODE=================================")
-encoder = encode("theswiftfoxjumpedoverthelazydog", "secretkey")
-print(encoder)
+ENCODER = encode("theswiftfoxjumpedoverthelazydog", "secretkey")
+print(ENCODER)
 print("==========================DECODE=================================")
-decoder = decode("EMBAXNKEKSYOVQTBJSWBDEMBPHZGJSL", "secretkey")
-print(decoder)
+DECODER = decode("EMBAXNKEKSYOVQTBJSWBDEMBPHZGJSL", "secretkey")
+print(DECODER)
 
 # # When you run this file, these next lines will show you the expected
 # # and actual outputs of the functions above.
